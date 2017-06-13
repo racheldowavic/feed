@@ -1,0 +1,11 @@
+{
+  "name": "feed",
+  "version": "1.0.0",
+  "description": "a small facebook-feed style project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Rachel Dowavic",
+  "license": "ISC"
+}
