@@ -1,0 +1,60 @@
+<!-- views/jogin.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Feed</title>
+    <%- include('linksandscripts'); %>
+</head>
+<body>
+
+  <%- include('navbar'); %>
+  <div class="container" style="padding-top: 20px">
+    <!-- get this to link you to /post  -->
+    <div class="card" onclick="location.href='/post'" style="cursor: pointer;">
+      <div class="card-block">
+        <div>
+          <!-- Profile Image  -->
+          <a href="#" class="card-link float-left">
+            <div style="padding-right: 15px;">
+              <img src="/images/rachel.jpg" width="50" height="50" class="d-inline-block align-top rounded-circle" alt="">
+            </div>
+          </a>
+          <!-- Username and date posted  -->
+          <div>
+            <p class="text-muted">What's on your mind?<br>
+              <span class="fa fa-video-camera" style="padding-right: 5px;"></span>
+              <span class="fa fa-picture-o" style="padding-right: 5px;"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- <p> Hello, <%= user.local.username %>! </p> -->
+    <!-- My Plan is to let each feed item be part of a card object.  -->
+    <% for(var i = 0; i < 10; i++) {%>
+      <div class="card">
+        <div class="card-block">
+          <div style="padding-bottom: 10px;">
+            <!-- Profile Image  -->
+            <a href="#" class="card-link float-left">
+              <div style="padding-right: 10px;">
+                <img src="/images/rachel.jpg" width="50" height="50" class="d-inline-block align-top rounded-circle" alt="">
+              </div>
+            </a>
+            <!-- Username and date posted  -->
+            <div>
+              <a href="#"><%= user.local.username %></a>
+              <p style="font-size: 10px"><%= time %></p>
+            </div>
+          </div>
+          <p class="card-text">It's just so ridiculous how people get away with anything these days. It's unbelievable that the senate voted yesterday to do title X. Unbelievable!</p>
+          <a href="#" class="card-link"><span class="fa fa-heart"></span></a>
+        </div>
+      </div>
+      <br>
+    <% } %>
+
+  </div>
+</body>
+</html>

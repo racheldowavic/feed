@@ -1,0 +1,48 @@
+<!-- views/jogin.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Create a Post</title>
+    <%- include('linksandscripts'); %>
+</head>
+<body>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">
+        <a class="navbar-brand" href="javascript:history.back()">
+          <span style="padding-right: 20px; padding-left: 3px;" class="fa fa-angle-left" href="javascript:history.back()"></span>
+          <img src="/images/1.svg" width="30" height="30" class="d-inline-block align-top" alt="" style="padding: 5px 5px;"> Post to Feed
+        </a>
+      </div>
+      <div class="p-2">
+        <a class="navbar-brand" href="/feed" onlick="document.new_post.submit();">Submit</a>
+      </div>
+    </div>
+</nav>
+  <div class="container" style="padding-top: 20px">
+    <!-- form for making a new post  -->
+    <form id="new_post">
+      <div class="form-group">
+        <textarea style="border: 0px !important" class="form-control" id="text" rows="7" placeholder="What are you thinking about.. :)"></textarea>
+      </div>
+        <div class="text-center">
+          <div class="btn-group">
+            <label class="btn btn-secondary btn-file">
+              <span class="fa fa-video-camera" style="padding-right: 5px;"></span>
+                Upload Video <input type="file" hidden>
+            </label>
+            <label class="btn btn-secondary btn-file">
+              <span class="fa fa-picture-o" style="padding-right: 5px;"></span>
+                Upload Photos
+              <input type="file" hidden multiple>
+            </label>
+          </div>
+       </div>
+    </form>
+  </div>
+
+
+
+
+</body>
+</html>

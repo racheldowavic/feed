@@ -1,0 +1,24 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Welcome to Feed</title>
+    <%- include('linksandscripts'); %>
+</head>
+<body>
+<div class="container" style="padding-top: 20px;">
+
+    <div class="jumbotron text-center">
+        <img src="/images/1.svg" width="200" height="200" class="d-inline-block align-top" alt="" style="padding: 5px 5px;">
+        <h1 class="display-3">Welcome to <b>Feed</b>!</h1>
+        <hr class="my-4">
+        <p>This is a simple feed app. Go see what your friends have posted now!</p>
+        <p class="lead">
+          <a class="btn btn-secondary btn-lg" href="/login" role="button">Login</a>
+          <a class="btn btn-secondary btn-lg" href="/signup" role="button">Sign Up</a>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
