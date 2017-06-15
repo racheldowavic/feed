@@ -5,4 +5,4 @@ Feed is a small app that lets anyone sign up and then log in with their username
 Users can post multiple images or a video as well as text.
 
 
-!(/images/1.svg "Logo")
+![Logo](/images/1.svg "Logo")
